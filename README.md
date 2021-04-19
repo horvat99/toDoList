@@ -1,7 +1,7 @@
 # toDoList
 toDoList JavaScript project
 
-install dependencies
+install the package manager for Node.js packages and modules
 ```
 npm install
 ```
