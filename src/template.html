@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>ToDo list app</title>
+</head>
+
+<body class="light-theme">
+
+    <div class="container-fluid p-0">
+        <nav class="navbar pr-0">
+            <div class="row w-100">
+                <div class="col-4">
+            <a class="navbar-brand" href="index.html">
+                <i class="fas fa-check-double d-inline-block align-top"></i>
+                ToDo List
+            </a>
+        </div>
+        <div class="col-4 text-center">
+            <span id="clock"></span>
+        </div>
+        <div class="col-4 text-right p-0">
+            <i class="fas fa-moon mr-1"></i>
+            <label class="switch">
+                <div>
+                    <input id="darkmode" type="checkbox" />
+                    <span class="slider round"></span>
+                </div>
+                
+            </label>
+            </div>
+        </div>
+        </nav>
+
+        <div class="row mt-5">
+
+            <div class="col-12 mt-5 m-auto text-center p-0">
+                <label for="addItem">
+                    <h3>New task</h3>
+                    <hr class="rule">
+                </label>
+                <input type="text" id="taskInputField" placeholder="e.g. Renew Library Account" class="form-control w-50 m-auto col-md-float-right">
+                <input type="time" id="time" class="form-control m-auto w-50">
+                <button class="button mt-2 noselect"  id="addToList" onclick="toDo.addTask()">Add to list</button>
+                <span id="error"></span>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="offset-3 col-6 text-center mt-5">
+                <ul class="list-group" id="taskList">
+
+                </ul>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+</html>
